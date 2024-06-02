@@ -40,13 +40,13 @@ export default function Home() {
         <div className="flex flex-wrap justify-center gap-3">
           <PropertyList
             src="https://picsum.photos/1200/600"
-            url="/FatayaHomestay"
+            url="/fatayahomestay"
             property="Fataya Home"
             desc="Cocok untuk buat keluarga baru"
           />
           <PropertyList
             src="https://picsum.photos/1200/600"
-            url="/SimbahHomestay"
+            url="/simbahhomestay"
             property="Simbah Home"
             desc="Cocok untuk mbah mbah"
           />
