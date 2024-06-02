@@ -29,7 +29,7 @@ import {
   PlayCircleIcon,
 } from "@heroicons/react/20/solid";
 
-const products = [
+const property = [
   { name: "Fataya Homestay", href: "/FatayaHomestay" },
   { name: "Simbah Homestay", href: "#" },
   { name: "Kontrakan 1", href: "#" },
@@ -45,16 +45,16 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky md:fixed w-full top-0 z-20 bg-transparent backdrop-blur-lg">
+    <header className="sticky top-0 z-20 w-full bg-transparent md:fixed backdrop-blur-lg">
       <nav
-        className="mx-auto flex max-w-7xl items-center justify-between p-3 lg:px-8"
+        className="flex items-center justify-between p-3 mx-auto max-w-7xl lg:px-8"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
           <Link href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
             <Image
-              className="h-8 w-auto rounded-full"
+              className="w-auto h-8 rounded-full"
               src="/Images/btc.png"
               alt=""
               draggable={false}
@@ -69,21 +69,27 @@ export default function Navbar() {
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
             onClick={() => setMobileMenuOpen(true)}
           >
-            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+            <Bars3Icon className="w-6 h-6" aria-hidden="true" />
           </button>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-6">
-        <Link href="/" className="text-lg font-bold leading-4 text-gray-900 hover:text-black">
+          <Link
+            href="/"
+            className="text-lg font-bold leading-4 text-gray-900 hover:text-black"
+          >
             Home
           </Link>
-          <Link href="#galery" className="text-lg font-bold leading-4 text-gray-900 hover:text-black">
+          <Link
+            href="#galery"
+            className="text-lg font-bold leading-4 text-gray-900 hover:text-black"
+          >
             Galery
           </Link>
           <Popover className="relative">
-            <PopoverButton className="flex items-center text-lg font-bold outline-none leading-4 text-gray-900 hover:text-black">
+            <PopoverButton className="flex items-center text-lg font-bold leading-4 text-gray-900 outline-none hover:text-black">
               Property
               <ChevronDownIcon
-                className="h-5 w-5 flex-none text-black"
+                className="flex-none w-5 h-5 text-black"
                 aria-hidden="true"
               />
             </PopoverButton>
@@ -96,15 +102,15 @@ export default function Navbar() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <PopoverPanel className="absolute -left-20 top-full z-10 mt-3 w-60 max-w-md overflow-hidden rounded-3xl bg-slate-50 shadow-lg outline-none">
+              <PopoverPanel className="absolute z-10 max-w-md mt-3 overflow-hidden shadow-lg outline-none -left-20 top-full w-60 rounded-3xl bg-slate-50">
                 <div className="p-4">
-                  {products.map((item) => (
+                  {property.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative flex items-center rounded-lg p-2 text-sm leading-4 hover:bg-slate-100"
+                      className="relative flex items-center p-2 text-sm leading-4 rounded-lg group hover:bg-slate-100"
                     >
                       <div className="flex-auto">
-                        <Link 
+                        <Link
                           href={item.href}
                           className="block font-semibold text-gray-900"
                         >
@@ -119,8 +125,10 @@ export default function Navbar() {
             </Transition>
           </Popover>
 
-
-          <Link href="#lokasi" className="text-lg font-bold leading-4 text-gray-900 hover:text-black">
+          <Link
+            href="#lokasi"
+            className="text-lg font-bold leading-4 text-gray-900 hover:text-black"
+          >
             Lokasi
           </Link>
         </PopoverGroup>
@@ -138,21 +146,21 @@ export default function Navbar() {
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
               onClick={() => setMobileMenuOpen(false)}
             >
-              <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+              <XMarkIcon className="w-6 h-6" aria-hidden="true" />
             </button>
           </div>
-          <div className="mt-6 flow-root">
+          <div className="flow-root mt-6">
             <div className="-my-6 divide-y divide-gray-500/10">
-              <div className="space-y-2 py-6">
-              <Link
+              <div className="py-6 space-y-2">
+                <Link
                   href="/"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50"
                 >
                   Home
                 </Link>
                 <Link
                   href="#galery"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50"
                 >
                   Galery
                 </Link>
@@ -170,12 +178,12 @@ export default function Navbar() {
                         />
                       </DisclosureButton>
                       <DisclosurePanel className="mt-2 space-y-2">
-                        {[...products].map((item) => (
+                        {[...property].map((item) => (
                           <DisclosureButton
                             key={item.name}
                             as="a"
                             href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                            className="block py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50"
                           >
                             {item.name}
                           </DisclosureButton>
@@ -187,7 +195,7 @@ export default function Navbar() {
 
                 <Link
                   href="#lokasi"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50"
                 >
                   Lokasi
                 </Link>
