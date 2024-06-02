@@ -4,13 +4,13 @@ import Galery from "../components/Galery";
 import Slider from "../components/Slider";
 import Head from "next/head";
 
-export default function SimbahHomestay() {
+export default function RoomPage() {
   const slides = [
     {
-      url: "https://picsum.photos/1200/600?grayscale",
+      url: "/Images/eth.jpg",
     },
     {
-      url: "https://picsum.photos/1200/600",
+      url: "/Images/kamar.jpg",
     },
   ];
   return (
@@ -30,7 +30,7 @@ export default function SimbahHomestay() {
         />
       </div>
       {/* <Hero /> */}
-      <section className="relative lg:h-screen py-16 bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100">
+      <section className="lg:sticky relative top-0 lg:h-screen py-16 bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100">
         <div className="flex justify-center mb-8">
           <div className="font-bold w-[80%] text-black z-10 flex justify-center flex-col items-center text-center">
             <h1 className="mb-4 text-4xl">Fataya Homestay</h1>
