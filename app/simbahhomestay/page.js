@@ -4,16 +4,13 @@ import Galery from "../components/Galery";
 import Slider from "../components/Slider";
 import Head from "next/head";
 
-export default function RoomPage() {
+export default function SimbahHomestay() {
   const slides = [
     {
       url: "https://picsum.photos/1200/600?grayscale",
     },
     {
       url: "https://picsum.photos/1200/600",
-    },
-    {
-      url: "https://cdn.oneesports.id/cdn-data/sites/2/2024/01/404440064_892730489223202_7583215412251772023_n-1024x576.jpg",
     },
   ];
   return (
@@ -33,7 +30,7 @@ export default function RoomPage() {
         />
       </div>
       {/* <Hero /> */}
-      <section className="lg:sticky relative top-0 lg:h-screen py-16 bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100">
+      <section className="relative lg:h-screen py-16 bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100">
         <div className="flex justify-center mb-8">
           <div className="font-bold w-[80%] text-black z-10 flex justify-center flex-col items-center text-center">
             <h1 className="mb-4 text-4xl">Fataya Homestay</h1>

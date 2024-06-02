@@ -2,7 +2,6 @@
 import React from "react";
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
   return (
     <footer className="flex flex-col px-10 pt-4 bg-gradient-to-r from-gray-300 via-[#bce1ff] to-gray-300">
       <h1 className="mx-auto my-10 text-xl font-bold text-black">
@@ -67,7 +66,7 @@ const Footer = () => {
       </div>
       <div className="m-auto text-center">
         <h1 className="mx-auto my-6 text-sm font-semibold text-black">
-          Copyright &copy; {currentYear} BARR&apos;Q, All rights reserved
+          Copyright &copy; 2024 BARR&apos;Q, All rights reserved
           <p className="text-gray-600">Design by BarrDesign</p>
         </h1>
       </div>

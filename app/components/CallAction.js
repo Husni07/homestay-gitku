@@ -17,11 +17,6 @@ const CallAction = () => {
             Homestay aja..... murah, tempatnya nyaman, fasilitas lengkap, dan
             bersih.
           </p>
-          <Link href="#property">
-            <button className="w-auto px-12 py-4 text-base font-semibold border-2 border-gray-600 rounded-full hover:border-white hover:text-black hover:bg-white animate-pulse hover:animate-none">
-              Lets Fucking Go
-            </button>
-          </Link>
         </div>
       </section>
     </div>

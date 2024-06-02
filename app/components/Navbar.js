@@ -30,8 +30,8 @@ import {
 } from "@heroicons/react/20/solid";
 
 const property = [
-  { name: "Fataya Homestay", href: "/FatayaHomestay" },
-  { name: "Simbah Homestay", href: "#" },
+  { name: "Fataya Homestay", href: "/fatayahomestay" },
+  { name: "Simbah Homestay", href: "/simbahhomestay" },
   { name: "Kontrakan 1", href: "#" },
   { name: "Kontrakan 2", href: "#" },
   { name: "Kontrakan 3", href: "#" },
