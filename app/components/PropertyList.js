@@ -4,7 +4,7 @@ import Link from "next/link";
 const PropertyList = ({ src, url, property, desc }) => {
   return (
     <div
-      className="relative flex flex-col max-w-sm transition-all duration-300 shadow rounded-xl hover:-translate-y-1 hover:shadow-lg"
+      className="relative flex md:w-1/3 flex-col max-w-sm transition-all duration-300 shadow rounded-xl hover:-translate-y-1 hover:shadow-lg"
       draggable={false}
     >
       <Link href={url} draggable={false}>
@@ -15,7 +15,7 @@ const PropertyList = ({ src, url, property, desc }) => {
             width={1200}
             height={600}
             draggable={false}
-            className="w-full h-auto rounded-t-2xl"
+            className=" h-[300px] rounded-t-2xl"
             data-aos="fade-up"
           />
         </div>

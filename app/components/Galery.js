@@ -18,7 +18,7 @@ const Galery = ({ src }) => {
         height={600}
         draggable={false}
         data-aos="fade-up"
-        className="w-full h-auto rounded-2xl"
+        className="w-full h-full rounded-2xl"
       />
     </div>
   );

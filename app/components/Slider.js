@@ -2,14 +2,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
-import AOS from "aos";
 function Slider({ slides }) {
-  useEffect(() => {
-    AOS.init({
-      duration: 500,
-    });
-  });
-  // console.log(`page hgjg${slides}`);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const prevSlide = useCallback(() => {
@@ -51,7 +44,7 @@ function Slider({ slides }) {
       <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
         <BsChevronCompactRight onClick={nextSlide} size={30} />
       </div>
-      <div className="flex justify-center py-2 top-4">
+      {/* <div className="flex justify-center py-2 top-4">
         {slides.map((slide, slideIndex) => (
           <div
             key={slideIndex}
@@ -61,7 +54,7 @@ function Slider({ slides }) {
             <RxDotFilled />
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }

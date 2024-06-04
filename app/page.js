@@ -39,31 +39,31 @@ export default function Home() {
         </h1>
         <div className="flex flex-wrap justify-center gap-3">
           <PropertyList
-            src="https://picsum.photos/1200/600"
+            src="/Images/image1.jpg"
             url="/fatayahomestay"
             property="Fataya Home"
             desc="Cocok untuk buat keluarga baru"
           />
           <PropertyList
-            src="https://picsum.photos/1200/600"
+            src="/Images/image2.jpg"
             url="/simbahhomestay"
             property="Simbah Home"
             desc="Cocok untuk mbah mbah"
           />
           <PropertyList
-            src="https://picsum.photos/1200/600"
+            src="/Images/image3.jpg"
             url="/FatayaHomestay"
             property="Kontrakan"
             desc="Cocok untuk yang masih jomblo"
           />
           <PropertyList
-            src="https://picsum.photos/1200/600"
+            src="/Images/image4.jpg"
             url="/FatayaHomestay"
             property="Kontrakan"
             desc="Cocok untuk Checkin"
           />
           <PropertyList
-            src="https://picsum.photos/1200/600"
+            src="/Images/image5.jpg"
             url="/FatayaHomestay"
             property="Kontrakan"
             desc="Cocok untuk Semua"
@@ -77,14 +77,12 @@ export default function Home() {
         {/* <span className="absolute w-4/12 rotate-90 skew-x-12 skew-y-12 rounded-full lg:w-2/12 aspect-square bg-gradient-to-tr from-blue-600 to-green-400 -top-5 lg:left-0 blur-2xl opacity-40"></span> */}
         <h1 className="mx-auto my-10 text-xl font-bold text-black">Galery</h1>
         <div className="flex flex-wrap justify-center">
-          <Galery src="https://picsum.photos/1200/600" />
-          <Galery src="https://picsum.photos/1200/600" />
-          <Galery src="https://picsum.photos/1200/600" />
-          <Galery src="https://picsum.photos/1200/600" />
-          <Galery src="https://picsum.photos/1200/600" />
-          <Galery src="https://picsum.photos/1200/600" />
-          <Galery src="https://picsum.photos/1200/600" />
-          <Galery src="https://picsum.photos/1200/600" />
+          <Galery src="/Images/rt.jpg" />
+          <Galery src="/Images/rtg.jpg" />
+          <Galery src="/Images/rmk.jpg" />
+          <Galery src="/Images/ps5.jpg" />
+          <Galery src="/Images/km.jpg" />
+          <Galery src="/Images/kamar.jpg" />
         </div>
       </section>
     </>

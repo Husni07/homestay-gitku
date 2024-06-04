@@ -4,6 +4,12 @@ import Galery from "../components/Galery";
 import Slider from "../components/Slider";
 import Head from "next/head";
 
+export const metadata = {
+  title: "Simbah Homestay: Penginapan dekat spot wisata Pantai Caruban",
+  description:
+    "Simbah Homestay adalah penginapan yang sangat terjangkau dan terletak di lokasi yang strategis dekat dengan spot wisata Karang Jahe, Sangat cocok untuk yang mau liburan di kota Tiongkok kecil (Rembang)",
+};
+
 export default function RoomPage() {
   const slides = [
     {
@@ -15,31 +21,29 @@ export default function RoomPage() {
   ];
   return (
     <div className="">
-      <Head>
-        <title>hallo</title>
-        <meta property="og:title" content="My page title" key="title" />
-      </Head>
       <div className="sticky top-0">
         <Image
-          src={"/Images/kamar.jpg"}
+          src={"/Images/image3.jpg"}
           alt="image"
           width={1280}
           height={600}
           draggable={false}
-          className="object-cover w-full md:hscreener"
+          className="object-cover w-full md:h-screen"
         />
       </div>
       {/* <Hero /> */}
-      <section className="lg:sticky relative top-0 lg:h-screen py-16 bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100">
+      <section className="relative py-16 bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100">
         <div className="flex justify-center mb-8">
           <div className="font-bold w-[80%] text-black z-10 flex justify-center flex-col items-center text-center">
-            <h1 className="mb-4 text-4xl">Fataya Homestay</h1>
+            <h1 className="mb-4 text-4xl">Simbah Homestay</h1>
             <p className="px-5 text-base">
-              Temukan kenyamanan dan kemewahan di Tempat kami di Kota Rembang.
-              Nikmati fasilitas terbaik, mulai dari kamar tidur yang nyaman
-              hingga ruang tamu yang luas dan dapur modern. Dapatkan juga akses
-              Wi-Fi gratis, kolam renang pribadi, dan layanan pemandu wisata
-              untuk pengalaman liburan yang tak terlupakan di Little Tiongkok
+              Simbah Homestay adalah penginapan yang sangat terjangkau dan
+              terletak di lokasi yang strategis dekat dengan spot wisata Pantai
+              Caruban, dengan fasilitas yang lengkap mulai dari kamar tidur yang
+              nyaman hingga ruang tamu yang luas dan dapur modern. Dapatkan juga
+              akses Wi-Fi gratis, kolam renang pribadi, dan layanan pemandu
+              wisata untuk pengalaman liburan yang tak terlupakan di Little
+              Tiongkok
             </p>
           </div>
         </div>
@@ -51,30 +55,43 @@ export default function RoomPage() {
           <span className="absolute w-4/12 rotate-90 skew-x-12 skew-y-12 rounded-full lg:w-2/12 aspect-square bg-gradient-to-tr from-blue-600 to-green-400 -top-5 lg:left-0 blur-2xl opacity-40"></span>
 
           <div className="relative flex flex-col-reverse w-full gap-10 lg:gap-0 lg:flex-row lg:items-center lg:justify-between">
-            <div className="w-full text-xl leading-tight lg:w-1/2 lg:pr-8 ">
-              <div className="mb-8 border-b-2">
-                <p className="text-lg font-bold text-transparent bg-gradient-to-r from-fuchsia-700 to-red-600 bg-clip-text">
-                  Description
-                </p>
-                <p className="text-base text-left text-gray-900">
-                  Di tempat ini kami menawarkan kamar tidur yang nyaman buat
-                  Checkin, kamar mandi pribadi, ruang tamu yang hangat, dapur
-                  lengkap, dan fasilitas tambahan seperti kolam renang untuk
-                  memastikan pengalaman menginap yang menyenangkan dan
-                  berkualitas.
-                </p>
-              </div>
+            <div className="w-full leading-tight lg:w-1/2 lg:pr-8 ">
               <div>
-                <p className="text-lg font-bold text-transparent bg-gradient-to-r from-fuchsia-700 to-red-600 bg-clip-text">
+                <h1 className="text-lg text-center border-b-2 border-black mb-2 font-bold">
                   Fasilitas
+                </h1>
+                <div className="grid gap-2 text-base">
+                  <div className="bg-[#bce1ff] text-center lg:text-left px-3 py-1 rounded-lg">
+                    4 Kamar (2 AC dan 2 fan), dengan tempat tidur
+                  </div>
+                  <div className="bg-[#bce1ff] text-center lg:text-left px-3 py-1 rounded-lg">
+                    Ruang keluarga beserta TV & Playstation 5
+                  </div>
+                  <div className="bg-[#bce1ff] text-center lg:text-left px-3 py-1 rounded-lg">
+                    Kitchen set, kompor, kulkas, dispenser.
+                  </div>
+                  <div className="bg-[#bce1ff] text-center lg:text-left px-3 py-1 rounded-lg">
+                    Kapasitas rumah hingga 10 orang
+                  </div>
+                  <div className="bg-[#bce1ff] text-center lg:text-left px-3 py-1 rounded-lg">
+                    Garasi
+                  </div>
+                  <div className="bg-[#bce1ff] text-center lg:text-left px-3 py-1 rounded-lg">
+                    Kolam renang
+                  </div>
+                  <div className="bg-[#bce1ff] text-center lg:text-left px-3 py-1 rounded-lg">
+                    Makan siang Gratis buat anak-anak yang masih sekolah
+                  </div>
+                </div>
+              </div>
+              <div className="mt-4">
+                <p className="text-lg text-center border-b-2 border-black mb-2 font-bold">
+                  Price
                 </p>
-                <div className="text-base list-image-[url(/Images/check-mark.svg)] text-left text-gray-700 mt-2 leading-tight">
-                  <li>Playstation 5 full set</li>
-                  <li>Free Wi-Fi</li>
-                  <li>TV layar lebar</li>
-                  <li>Billiard</li>
-                  <li>AC</li>
-                  <li>Kolam renang</li>
+                <div className=" bg-gradient-to-r from-[#7ed77b] to-[#bce1ff] text-center lg:text-left px-3 py-1 rounded-lg">
+                  Harga permalam{" "}
+                  <span className="line-through">Rp. 2.000.000</span>
+                  <p className="text-3xl">1.999.999</p>
                 </div>
               </div>
             </div>
@@ -91,14 +108,12 @@ export default function RoomPage() {
         {/* <span className="absolute w-4/12 rotate-90 skew-x-12 skew-y-12 rounded-full lg:w-2/12 aspect-square bg-gradient-to-tr from-blue-600 to-green-400 -top-5 lg:left-0 blur-2xl opacity-40"></span> */}
         <h1 className="mx-auto my-10 text-xl font-bold text-black">Galery</h1>
         <div className="flex flex-wrap justify-center">
-          <Galery src="https://picsum.photos/1200/600" />
-          <Galery src="https://picsum.photos/1200/600" />
-          <Galery src="https://picsum.photos/1200/600" />
-          <Galery src="https://picsum.photos/1200/600" />
-          <Galery src="https://picsum.photos/1200/600" />
-          <Galery src="https://picsum.photos/1200/600" />
-          <Galery src="https://picsum.photos/1200/600" />
-          <Galery src="https://picsum.photos/1200/600" />
+          <Galery src="/Images/rt.jpg" />
+          <Galery src="/Images/rtg.jpg" />
+          <Galery src="/Images/rmk.jpg" />
+          <Galery src="/Images/ps5.jpg" />
+          <Galery src="/Images/km.jpg" />
+          <Galery src="/Images/kamar.jpg" />
         </div>
       </section>
       {/* <Galery /> */}
