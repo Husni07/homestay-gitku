@@ -12,12 +12,12 @@ const CallAction = () => {
           <h1 className="mb-6 text-5xl font-medium">
             Welcome to Barr Homestay
           </h1>
-          <p className="mx-16 mb-12 text-xl font-semibold">
+          <h2 className="mx-16 lg:mx-28 mb-12 text-xl font-semibold">
             Penginapan yang sangat terjangkau dan terletak di lokasi yang
             strategis dekat dengan spot wisata Pantai Karang Jahe (KJB), dengan
             fasilitas yang lengkap serta pemandu wisata untuk pengalaman liburan
             yang tak terlupakan di Little Tiongkok
-          </p>
+          </h2>
         </div>
       </section>
     </div>

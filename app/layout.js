@@ -26,6 +26,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className="scroll-smooth">
         <Navbar />
+        <div className="w-0 h-0" id="top"></div>
         {children}
         <ButtonWa />
         <Footer />

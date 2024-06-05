@@ -23,7 +23,7 @@ export default function RoomPage() {
     <div className="">
       <div className="sticky top-0">
         <Image
-          src={"/Images/image3.jpg"}
+          src={"/Images/image2.jpg"}
           alt="image"
           width={1280}
           height={600}

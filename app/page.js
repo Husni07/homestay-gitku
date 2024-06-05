@@ -6,23 +6,30 @@ import Galery from "./components/Galery";
 export default function Home() {
   const slides = [
     {
-      url: "https://picsum.photos/1200/600?grayscale",
+      url: "/Images/image1.jpg",
     },
     {
-      url: "https://picsum.photos/1200/600",
+      url: "/Images/image3.jpg",
+    },
+    {
+      url: "/Images/image5.jpg",
+    },
+    {
+      url: "/Images/rt.jpg",
     },
   ];
+
   return (
     <>
-      <div
+      {/* <div
         className="p-3 bg-fixed bg-cover h-80 lg:h-screen lg:p-24"
         style={{
           backgroundImage:
-            "url('https://media.istockphoto.com/id/1455382950/id/foto/tempat-tidur-yang-nyaman-tanpa-tamu-di-kamar-hotel.jpg?s=612x612&w=0&k=20&c=QTlpE-ImejQa9QjFK-AwhwtBAdEOTsXcfQpcLzHRjkk=')",
+            "url('/Images/image3.jpg')",
         }}
       >
         <Slider slides={slides} />
-      </div>
+      </div> */}
       <CallAction />
       <section
         className="relative flex flex-col bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100 w-full p-4 py-6 lg:py-16"
@@ -33,8 +40,16 @@ export default function Home() {
           <span className="absolute w-24 h-24 bg-blue-600 right-4 bottom-12 rounded-3xl blur-xl opacity-80"></span>
         </div>
         <span className="absolute w-4/12 rotate-90 skew-x-12 skew-y-12 rounded-full lg:w-2/12 aspect-square bg-gradient-to-tr from-blue-600 to-green-400 -top-5 lg:left-0 blur-2xl opacity-40"></span>
-        {/* <span className="absolute w-4/12 rotate-90 skew-x-12 skew-y-12 rounded-full lg:w-2/12 aspect-square bg-gradient-to-tr from-blue-600 to-green-400 -top-5 lg:left-0 blur-2xl opacity-40"></span> */}
-        <h1 className="mx-auto my-10 text-xl font-bold text-black">
+        <div className="h-40 lg:h-80 lg:p-28 text-center font-semibold z-10">
+          <h1 className="text-2xl lg:text-4xl text-gray-700">
+            <span className="text-transparent bg-gradient-to-r from-blue-600 to-green-700 bg-clip-text">
+              lagi liburan di Rembang?&nbsp;
+            </span>
+             ayo menginap ke Barr homestay, nikmati semua fasilitas premium yang
+            kami sediakan
+          </h1>
+        </div>
+        <h1 className="mx-auto my-10 text-xl font-bold text-black z-10">
           All Property
         </h1>
         <div className="flex flex-wrap justify-center gap-3">
@@ -71,19 +86,13 @@ export default function Home() {
         </div>
       </section>
       <section
-        className="relative flex flex-col bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100 w-full p-4 py-6 lg:py-16"
+        className="p-4  h-80 lg:h-screen lg:p-24 bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100"
         id="galery"
       >
-        {/* <span className="absolute w-4/12 rotate-90 skew-x-12 skew-y-12 rounded-full lg:w-2/12 aspect-square bg-gradient-to-tr from-blue-600 to-green-400 -top-5 lg:left-0 blur-2xl opacity-40"></span> */}
-        <h1 className="mx-auto my-10 text-xl font-bold text-black">Galery</h1>
-        <div className="flex flex-wrap justify-center">
-          <Galery src="/Images/rt.jpg" />
-          <Galery src="/Images/rtg.jpg" />
-          <Galery src="/Images/rmk.jpg" />
-          <Galery src="/Images/ps5.jpg" />
-          <Galery src="/Images/km.jpg" />
-          <Galery src="/Images/kamar.jpg" />
-        </div>
+        <h1 className="my-10 text-xl text-center font-bold text-black">
+          Galery
+        </h1>
+        <Slider slides={slides} />
       </section>
     </>
   );

@@ -28,6 +28,7 @@ import {
   PhoneIcon,
   PlayCircleIcon,
 } from "@heroicons/react/20/solid";
+import { useRouter, usePathname, useSearchParams } from 'next/navigation'
 
 const property = [
   { name: "Fataya Homestay", href: "/fatayahomestay" },
@@ -43,7 +44,7 @@ function classNames(...classes) {
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
+  let patchname = usePathname()
   return (
     <header className="sticky top-0 z-20 w-full bg-transparent md:fixed backdrop-blur-lg">
       <nav
@@ -52,7 +53,7 @@ export default function Navbar() {
       >
         <div className="flex lg:flex-1">
           <Link href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
+            <span className="sr-only">Fataya</span>
             <Image
               className="w-auto h-8 rounded-full"
               src="/Images/btc.png"
@@ -72,9 +73,9 @@ export default function Navbar() {
             <Bars3Icon className="w-6 h-6" aria-hidden="true" />
           </button>
         </div>
-        <PopoverGroup className="hidden lg:flex lg:gap-x-6">
+        <PopoverGroup className="hidden lg:flex lg:gap-x-6 py-4">
           <Link
-            href="/"
+            href={patchname ==="/" ? "#top": "/#top"}
             className="text-lg font-bold leading-4 text-gray-900 hover:text-black"
           >
             Home
@@ -153,7 +154,7 @@ export default function Navbar() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="py-6 space-y-2">
                 <Link
-                  href="/"
+                  href={patchname ==="/" ? "#top": "/#top"}
                   className="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50"
                 >
                   Home

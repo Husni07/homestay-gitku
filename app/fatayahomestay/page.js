@@ -4,9 +4,9 @@ import Galery from "../components/Galery";
 import Slider from "../components/Slider";
 import Head from "next/head";
 
-
 export const metadata = {
-  title: "Fataya Homestay: Penginapan dekat spot wisata Pantai Karang Jahe (KJB)",
+  title:
+    "Fataya Homestay: Penginapan dekat spot wisata Pantai Karang Jahe (KJB)",
   description:
     "Fataya Homestay adalah penginapan yang sangat terjangkau dan terletak di lokasi yang strategis dekat dengan spot wisata Pantai Karang Jahe (KJB), Sangat cocok untuk yang mau liburan di kota Tiongkok kecil (Rembang)",
 };
@@ -21,7 +21,7 @@ export default function RoomPage() {
   ];
   return (
     <div className="">
-      <div className="sticky top-0">
+      <div className="sticky top-0 -z-10">
         <Image
           src={"/Images/image3.jpg"}
           alt="image"
@@ -38,11 +38,12 @@ export default function RoomPage() {
             <h1 className="mb-4 text-4xl">Fataya Homestay</h1>
             <p className="px-5 text-base">
               Fataya Homestay adalah penginapan yang sangat terjangkau dan
-              terletak di lokasi yang strategis dekat dengan spot wisata Pantai Karang
-              Jahe (KJB), dengan fasilitas yang lengkap mulai dari kamar tidur yang nyaman hingga ruang tamu yang
-              luas dan dapur modern. Dapatkan juga akses Wi-Fi gratis, kolam
-              renang pribadi, dan layanan pemandu wisata untuk pengalaman
-              liburan yang tak terlupakan di Little Tiongkok
+              terletak di lokasi yang strategis dekat dengan spot wisata Pantai
+              Karang Jahe (KJB), dengan fasilitas yang lengkap mulai dari kamar
+              tidur yang nyaman hingga ruang tamu yang luas dan dapur modern.
+              Dapatkan juga akses Wi-Fi gratis, kolam renang pribadi, dan
+              layanan pemandu wisata untuk pengalaman liburan yang tak
+              terlupakan di Little Tiongkok
             </p>
           </div>
         </div>
@@ -100,11 +101,10 @@ export default function RoomPage() {
           </div>
         </div>
       </section>
-      <section
+      {/* <section
         className="relative flex flex-col bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100 w-full p-4 py-6 lg:py-16"
         id="galery"
       >
-        {/* <span className="absolute w-4/12 rotate-90 skew-x-12 skew-y-12 rounded-full lg:w-2/12 aspect-square bg-gradient-to-tr from-blue-600 to-green-400 -top-5 lg:left-0 blur-2xl opacity-40"></span> */}
         <h1 className="mx-auto my-10 text-xl font-bold text-black">Galery</h1>
         <div className="flex flex-wrap justify-center">
           <Galery src="/Images/rt.jpg" />
@@ -114,8 +114,16 @@ export default function RoomPage() {
           <Galery src="/Images/km.jpg" />
           <Galery src="/Images/kamar.jpg" />
         </div>
+      </section> */}
+      <section
+        className="p-4 z-10 h-80 lg:h-screen lg:p-24 bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100"
+        id="galery"
+      >
+        <h1 className="my-10 text-xl text-center font-bold text-black">
+          Galery
+        </h1>
+        <Slider slides={slides} />
       </section>
-      {/* <Galery /> */}
     </div>
   );
 }
