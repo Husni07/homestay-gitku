@@ -67,19 +67,19 @@ export default function Home() {
           />
           <PropertyList
             src="/Images/image3.jpg"
-            url="/FatayaHomestay"
+            url="/fatayahomestay"
             property="Kontrakan"
             desc="Cocok untuk yang masih jomblo"
           />
           <PropertyList
             src="/Images/image4.jpg"
-            url="/FatayaHomestay"
+            url="/fatayahomestay"
             property="Kontrakan"
             desc="Cocok untuk Checkin"
           />
           <PropertyList
             src="/Images/image5.jpg"
-            url="/FatayaHomestay"
+            url="/fatayahomestay"
             property="Kontrakan"
             desc="Cocok untuk Semua"
           />
