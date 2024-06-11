@@ -2,20 +2,24 @@ import Image from "next/image";
 import Slider from "./components/Slider";
 import CallAction from "./components/CallAction";
 import PropertyList from "./components/PropertyList";
-import Galery from "./components/Galery";
+import GalerySlider from "./components/Galery";
+import Link from "next/link";
 export default function Home() {
   const slides = [
     {
       url: "/Images/image1.jpg",
     },
     {
+      url: "/Images/image2.jpg",
+    },
+    {
       url: "/Images/image3.jpg",
     },
     {
-      url: "/Images/image5.jpg",
+      url: "/Images/image4.jpg",
     },
     {
-      url: "/Images/rt.jpg",
+      url: "/Images/image5.jpg",
     },
   ];
 
@@ -40,7 +44,7 @@ export default function Home() {
           <span className="absolute w-24 h-24 bg-blue-600 right-4 bottom-12 rounded-3xl blur-xl opacity-80"></span>
         </div>
         <span className="absolute w-4/12 rotate-90 skew-x-12 skew-y-12 rounded-full lg:w-2/12 aspect-square bg-gradient-to-tr from-blue-600 to-green-400 -top-5 lg:left-0 blur-2xl opacity-40"></span>
-        <div className="h-40 lg:h-80 lg:p-28 text-center font-semibold z-10">
+        <div className="h-80 py-20 lg:p-28 text-center font-semibold z-10">
           <h1 className="text-2xl lg:text-4xl text-gray-700">
             <span className="text-transparent bg-gradient-to-r from-blue-600 to-green-700 bg-clip-text">
               lagi liburan di Rembang?&nbsp;
@@ -48,11 +52,14 @@ export default function Home() {
              ayo menginap ke Barr homestay, nikmati semua fasilitas premium yang
             kami sediakan
           </h1>
+            <div className="border-2 m-8 border-black hover:bg-gradient-to-r from-[#bce1ff] via-gray-100 to-[#bce1ff] w-fit rounded-3xl mx-auto p-2 px-3 transition-all duration-300 hover:-translate-y-1">
+              <Link href="https://wa.me/6285155267710?text=P%20bang" target="_blank">Let&apos;s Fucking Go</Link>
+            </div>
         </div>
         <h1 className="mx-auto my-10 text-xl font-bold text-black z-10">
           All Property
         </h1>
-        <div className="flex flex-wrap justify-center gap-3">
+        <div className="flex flex-wrap justify-center">
           <PropertyList
             src="/Images/image1.jpg"
             url="/fatayahomestay"
@@ -86,13 +93,13 @@ export default function Home() {
         </div>
       </section>
       <section
-        className="p-4  h-80 lg:h-screen lg:p-24 bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100"
+        className="p-4 h-screen lg:p-20 bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100"
         id="galery"
       >
-        <h1 className="my-10 text-xl text-center font-bold text-black">
+        <h1 className="mb-10 text-xl text-center font-bold text-black">
           Galery
         </h1>
-        <Slider slides={slides} />
+        <GalerySlider slides={slides} />
       </section>
     </>
   );

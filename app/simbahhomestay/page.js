@@ -1,8 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import Galery from "../components/Galery";
+import GalerySlider from "../components/Galery";
 import Slider from "../components/Slider";
-import Head from "next/head";
 
 export const metadata = {
   title: "Simbah Homestay: Penginapan dekat spot wisata Pantai Caruban",
@@ -12,6 +11,15 @@ export const metadata = {
 
 export default function RoomPage() {
   const slides = [
+    {
+      url: "/Images/eth.jpg",
+    },
+    {
+      url: "/Images/eth.jpg",
+    },
+    {
+      url: "/Images/kamar.jpg",
+    },
     {
       url: "/Images/eth.jpg",
     },
@@ -108,12 +116,7 @@ export default function RoomPage() {
         {/* <span className="absolute w-4/12 rotate-90 skew-x-12 skew-y-12 rounded-full lg:w-2/12 aspect-square bg-gradient-to-tr from-blue-600 to-green-400 -top-5 lg:left-0 blur-2xl opacity-40"></span> */}
         <h1 className="mx-auto my-10 text-xl font-bold text-black">Galery</h1>
         <div className="flex flex-wrap justify-center">
-          <Galery src="/Images/rt.jpg" />
-          <Galery src="/Images/rtg.jpg" />
-          <Galery src="/Images/rmk.jpg" />
-          <Galery src="/Images/ps5.jpg" />
-          <Galery src="/Images/km.jpg" />
-          <Galery src="/Images/kamar.jpg" />
+          <GalerySlider slides={slides} />
         </div>
       </section>
       {/* <Galery /> */}

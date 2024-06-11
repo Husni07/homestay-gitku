@@ -3,6 +3,8 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ButtonWa from "./components/ButtonWa";
+import GoogleAnalytics from "./components/GoogleAnalytics.";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,13 +20,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <meta
-          name="google-site-verification"
-          content="HK9cE86uMRPtvmL41jZHTj25i3mwF7KW-l3QRzlCerU"
-        />
-      </head>
+      <GoogleAnalytics />
+      <GoogleTagManager gtmId="GTM-TNZRGJ65" />
+
       <body className="scroll-smooth">
+        <iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-PDC27K9H"
+          height="0"
+          width="0"
+          style="display:none;visibility:hidden"
+        ></iframe>
         <Navbar />
         <div className="w-0 h-0" id="top"></div>
         {children}

@@ -42,6 +42,23 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
+const event = ({ action, category, label, value }) => {
+  window.gtag('event', action, {
+    event_category: category,
+    event_label: label,
+    value: value,
+  });
+};
+
+const viewGalery = () => {
+      event({
+        action: 'view_galery',
+        category: 'visit',
+        label: 'galery visited',
+        value: 'visit successfully',
+      });
+    };
+
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   let patchname = usePathname()
@@ -81,6 +98,7 @@ export default function Navbar() {
             Home
           </Link>
           <Link
+          onClick={viewGalery}
             href="#galery"
             className="text-lg font-bold leading-4 text-gray-900 hover:text-black"
           >

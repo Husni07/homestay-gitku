@@ -1,8 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import Galery from "../components/Galery";
+import GalerySlider from "../components/Galery";
 import Slider from "../components/Slider";
-import Head from "next/head";
 
 export const metadata = {
   title:
@@ -14,6 +13,15 @@ export default function RoomPage() {
   const slides = [
     {
       url: "/Images/eth.jpg",
+    },
+    {
+      url: "/Images/kamar.jpg",
+    },
+    {
+      url: "/Images/kamar.jpg",
+    },
+    {
+      url: "/Images/kamar.jpg",
     },
     {
       url: "/Images/kamar.jpg",
@@ -101,20 +109,6 @@ export default function RoomPage() {
           </div>
         </div>
       </section>
-      {/* <section
-        className="relative flex flex-col bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100 w-full p-4 py-6 lg:py-16"
-        id="galery"
-      >
-        <h1 className="mx-auto my-10 text-xl font-bold text-black">Galery</h1>
-        <div className="flex flex-wrap justify-center">
-          <Galery src="/Images/rt.jpg" />
-          <Galery src="/Images/rtg.jpg" />
-          <Galery src="/Images/rmk.jpg" />
-          <Galery src="/Images/ps5.jpg" />
-          <Galery src="/Images/km.jpg" />
-          <Galery src="/Images/kamar.jpg" />
-        </div>
-      </section> */}
       <section
         className="p-4 z-10 h-80 lg:h-screen lg:p-24 bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100"
         id="galery"
@@ -122,7 +116,7 @@ export default function RoomPage() {
         <h1 className="my-10 text-xl text-center font-bold text-black">
           Galery
         </h1>
-        <Slider slides={slides} />
+        <GalerySlider slides={slides} />
       </section>
     </div>
   );
