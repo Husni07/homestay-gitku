@@ -24,12 +24,14 @@ export default function RootLayout({ children }) {
       <GoogleTagManager gtmId="GTM-TNZRGJ65" />
 
       <body className="scroll-smooth">
-        {/* <iframe
-          src="https://www.googletagmanager.com/ns.html?id=GTM-PDC27K9H"
-          height="0"
-          width="0"
-          style="display:none;visibility:hidden"
-        ></iframe> */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-TNZRGJ65"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
         <Navbar />
         <div className="w-0 h-0" id="top"></div>
         {children}
