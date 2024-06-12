@@ -74,7 +74,7 @@ export default function Home() {
           />
           <PropertyList
             src="/Images/image3.jpg"
-            url="/fatayahomestay"
+            url="/kontrakan-1"
             property="Kontrakan"
             desc="Cocok untuk yang masih jomblo"
           />
