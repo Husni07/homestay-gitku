@@ -118,7 +118,7 @@ const HeroV2 = () => {
           className="text-center max-w-screen-md mx-auto"
         >
           <h1 className="text-3xl font-bold mb-4">
-            What is &nsbp;<span className="text-yellow-500">Fataya Homestay?</span>
+            What is &nbsp;<span className="text-[#579fe2]">Fataya Homestay?</span>
           </h1>
           <p className="text-gray-500">
             FatayaHomestay is Menurut KBBI daring, puisi adalah gubahan dalam
