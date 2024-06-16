@@ -43,7 +43,7 @@ const PropertyList = ({ src, url, property, desc }) => {
             width={1200}
             height={600}
             draggable={false}
-            className="h-[300px]"
+            className="h-[300px] md:h-[500px]"
             data-aos="fade-up"
           />
         <Link href={url} draggable={false}>
