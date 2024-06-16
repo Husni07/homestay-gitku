@@ -1,42 +1,32 @@
 import Image from "next/image";
-import Slider from "./components/Slider";
-import CallAction from "./components/CallAction";
 import PropertyList from "./components/PropertyList";
 import GalerySlider from "./components/Galery";
-import Link from "next/link";
+import HeroV2 from "./components/HeroV2";
 export default function Home() {
   const slides = [
     {
-      url: "/Images/image1.jpg",
+      url: "/Images/image1.webp",
     },
     {
-      url: "/Images/image2.jpg",
+      url: "/Images/image2.webp",
     },
     {
-      url: "/Images/image3.jpg",
+      url: "/Images/image3.webp",
     },
     {
-      url: "/Images/image4.jpg",
+      url: "/Images/image4.webp",
     },
     {
-      url: "/Images/image5.jpg",
+      url: "/Images/image5.webp",
     },
   ];
 
   return (
     <>
-      {/* <div
-        className="p-3 bg-fixed bg-cover h-80 lg:h-screen lg:p-24"
-        style={{
-          backgroundImage:
-            "url('/Images/image3.jpg')",
-        }}
-      >
-        <Slider slides={slides} />
-      </div> */}
-      <CallAction />
+      {/* <CallAction /> */}
+      <HeroV2 />
       <section
-        className="relative flex flex-col bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100 w-full p-4 py-6 lg:py-16"
+        className="relative flex flex-col bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100 w-full px-4"
         id="property"
       >
         <div className="absolute inset-y-0 hidden w-full lg:w-1/2 lg:right-0 lg:block">
@@ -44,48 +34,69 @@ export default function Home() {
           <span className="absolute w-24 h-24 bg-blue-600 right-4 bottom-12 rounded-3xl blur-xl opacity-80"></span>
         </div>
         <span className="absolute w-4/12 rotate-90 skew-x-12 skew-y-12 rounded-full lg:w-2/12 aspect-square bg-gradient-to-tr from-blue-600 to-green-400 -top-5 lg:left-0 blur-2xl opacity-40"></span>
-        <div className="h-80 py-20 lg:p-28 text-center font-semibold z-10">
-          <h1 className="text-2xl lg:text-4xl text-gray-700">
+        <div className="lg:px-20 font-semibold z-10">
+          <h1 className="text-2xl lg:text-4xl text-gray-700 md:text-left">
             <span className="text-transparent bg-gradient-to-r from-blue-600 to-green-700 bg-clip-text">
-              lagi liburan di Rembang?&nbsp;
+              Sedang mencari Penginapan di Jogja?&nbsp;
             </span>
-             ayo menginap ke Barr homestay, nikmati semua fasilitas premium yang
-            kami sediakan
+            <p className="text-1xl md:text-2xl">
+              di mana Anda bisa bersantai, merasakan budaya tradisional, dan
+              melihat wisata yang menakjubkan
+            </p>
           </h1>
-            <div className="border-2 m-8 border-black hover:bg-gradient-to-r from-[#bce1ff] via-gray-100 to-[#bce1ff] w-fit rounded-3xl mx-auto p-2 px-3 transition-all duration-300 hover:-translate-y-1">
-              <Link href="https://wa.me/6285155267710?text=P%20bang" target="_blank">Let&apos;s Fucking Go</Link>
+          <div className="flex flex-col md:flex-row gap-4 my-4 w-full">
+            <p className="w-full md:w-3/5">
+              fatayahomestay adalah salah satu Tempat Penginapan kjhkjhkjh
+              kjhjhk jhkjh kjhkj hkjh kjh kjh kjh fatayahomestay adalah salah
+              satu Tempat Penginapan kjhkjhkjh kjhjhk jhkjh kjhkj hkjh kjh kjh
+              kjh fatayahomestay adalah salah satu Tempat Penginapan kjhkjhkjh
+              kjhjhk jhkjh kjhkj hkjh kjh kjh kjh fatayahomestay adalah salah
+              satu Tempat Penginapan kjhkjhkjh kjhjhk jhkjh kjhkj hkjh kjh kjh
+            </p>
+            <div className="w-full md:w-2/5">
+              <Image
+                src="/Images/eth.webp"
+                alt="p"
+                width="1200"
+                height="600"
+                className="rounded-lg"
+              />
             </div>
+          </div>
+          {/* <div className="border-2 m-8 border-black hover:bg-gradient-to-r from-[#bce1ff] via-gray-100 to-[#bce1ff] w-fit rounded-3xl mx-auto p-2 px-3 transition-all duration-300 hover:-translate-y-1">
+              <Link href="https://wa.me/6285155267710?text=P%20bang" target="_blank">Let&apos;s Fucking Go</Link>
+            </div> */}
         </div>
         <h1 className="mx-auto my-10 text-xl font-bold text-black z-10">
           All Property
         </h1>
-        <div className="flex flex-wrap justify-center">
+        <div className="flex flex-wrap justify-center gap-2">
           <PropertyList
-            src="/Images/image1.jpg"
+            src="/Images/image1.webp"
             url="/fatayahomestay"
             property="Fataya Home"
             desc="Cocok untuk buat keluarga baru"
           />
           <PropertyList
-            src="/Images/image2.jpg"
+            src="/Images/image2.webp"
             url="/simbahhomestay"
             property="Simbah Home"
             desc="Cocok untuk mbah mbah"
           />
           <PropertyList
-            src="/Images/image3.jpg"
+            src="/Images/image3.webp"
             url="/kontrakan-1"
             property="Kontrakan"
             desc="Cocok untuk yang masih jomblo"
           />
           <PropertyList
-            src="/Images/image4.jpg"
+            src="/Images/image4.webp"
             url="/fatayahomestay"
             property="Kontrakan"
             desc="Cocok untuk Checkin"
           />
           <PropertyList
-            src="/Images/image5.jpg"
+            src="/Images/image5.webp"
             url="/fatayahomestay"
             property="Kontrakan"
             desc="Cocok untuk Semua"

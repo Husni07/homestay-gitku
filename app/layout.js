@@ -12,9 +12,6 @@ export const metadata = {
   title: "Barr Homestay: Penginapan dekat spot wisata Pantai Karang Jahe (KJB)",
   description:
     "Barr Homestay adalah penginapan yang sangat terjangkau dan terletak di lokasi yang strategis dekat dengan spot wisata Pantai Karang Jahe (KJB), Sangat cocok untuk yang mau liburan di kota Tiongkok kecil (Rembang)",
-  openGraph: {
-    images: "/opengraph-image.jpg",
-  },
 };
 
 export default function RootLayout({ children }) {

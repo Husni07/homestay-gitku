@@ -12,26 +12,26 @@ export const metadata = {
 export default function RoomPage() {
   const slides = [
     {
-      url: "/Images/eth.jpg",
+      url: "/Images/eth.webp",
     },
     {
-      url: "/Images/eth.jpg",
+      url: "/Images/eth.webp",
     },
     {
-      url: "/Images/kamar.jpg",
+      url: "/Images/kamar.webp",
     },
     {
-      url: "/Images/eth.jpg",
+      url: "/Images/eth.webp",
     },
     {
-      url: "/Images/kamar.jpg",
+      url: "/Images/kamar.webp",
     },
   ];
   return (
     <div className="">
       <div className="sticky top-0">
         <Image
-          src={"/Images/image2.jpg"}
+          src={"/Images/image2.webp"}
           alt="image"
           width={1280}
           height={600}
