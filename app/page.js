@@ -34,7 +34,7 @@ export default function Home() {
           <span className="absolute w-24 h-24 bg-blue-600 right-4 bottom-12 rounded-3xl blur-xl opacity-80"></span>
         </div>
         <span className="absolute w-4/12 rotate-90 skew-x-12 skew-y-12 rounded-full lg:w-2/12 aspect-square bg-gradient-to-tr from-blue-600 to-green-400 -top-5 lg:left-0 blur-2xl opacity-40"></span>
-        <div className="lg:px-20 font-semibold z-10">
+        {/* <div className="lg:px-20 font-semibold z-10">
           <h1 className="text-2xl lg:text-4xl text-gray-700 md:text-left">
             <span className="text-transparent bg-gradient-to-r from-blue-600 to-green-700 bg-clip-text">
               Sedang mencari Penginapan di Jogja?&nbsp;
@@ -63,43 +63,37 @@ export default function Home() {
               />
             </div>
           </div>
-          {/* <div className="border-2 m-8 border-black hover:bg-gradient-to-r from-[#bce1ff] via-gray-100 to-[#bce1ff] w-fit rounded-3xl mx-auto p-2 px-3 transition-all duration-300 hover:-translate-y-1">
-              <Link href="https://wa.me/6285155267710?text=P%20bang" target="_blank">Let&apos;s Fucking Go</Link>
-            </div> */}
-        </div>
+        </div> */}
         <h1 className="mx-auto my-10 text-xl font-bold text-black z-10">
           All Property
         </h1>
-        <div className="flex flex-wrap justify-center gap-2">
+            <div
+    className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-7 px-4"
+  >
           <PropertyList
             src="/Images/image1.webp"
             url="/fatayahomestay"
             property="Fataya Home"
-            desc="Cocok untuk buat keluarga baru"
           />
           <PropertyList
             src="/Images/image2.webp"
             url="/simbahhomestay"
             property="Simbah Home"
-            desc="Cocok untuk mbah mbah"
           />
           <PropertyList
             src="/Images/image3.webp"
             url="/kontrakan-1"
             property="Kontrakan"
-            desc="Cocok untuk yang masih jomblo"
           />
           <PropertyList
             src="/Images/image4.webp"
             url="/fatayahomestay"
             property="Kontrakan"
-            desc="Cocok untuk Checkin"
           />
           <PropertyList
             src="/Images/image5.webp"
             url="/fatayahomestay"
             property="Kontrakan"
-            desc="Cocok untuk Semua"
           />
         </div>
       </section>
