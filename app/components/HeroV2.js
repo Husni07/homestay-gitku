@@ -12,9 +12,9 @@ const HeroV2 = () => {
         <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
           <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
             <h1 className="text-3xl font-extrabold sm:text-5xl">
-              Fataya
+              Welcome to
               <strong className="block font-extrabold text-[#579fe2]">
-                Homestay
+                Fataya Homestay
               </strong>
             </h1>
 
@@ -118,16 +118,18 @@ const HeroV2 = () => {
           className="text-center max-w-screen-md mx-auto"
         >
           <h1 className="text-3xl font-bold mb-4">
-            What is<span className="text-yellow-500">Skilline?</span>
+            What is &nsbp;<span className="text-yellow-500">Fataya Homestay?</span>
           </h1>
           <p className="text-gray-500">
-            Skilline is a platform that allows educators to create online
-            classes whereby they can store the course materials online; manage
-            assignments, quizzes and exams; monitor due dates; grade results and
-            provide students with feedback all in one place.
+            FatayaHomestay is Menurut KBBI daring, puisi adalah gubahan dalam
+            bahasa yang bentuknya dipilih dan ditata secara cermat, sehingga
+            mempertajam kesadaran orang akan pengalaman hidup dan membangkitkan
+            tanggapan khusus lewat penataan bunyi, irama, dan makna khusus. Baca
+            artikel detikedu, 30 Contoh Puisi Pendek Bahasa Indonesia dari
+            Berbagai Tema selengkapnya
           </p>
         </div>
-        <div
+        {/* <div
           data-aos="fade-up"
           className="flex flex-col md:flex-row justify-center space-y-5 md:space-y-0 md:space-x-6 lg:space-x-10 mt-7"
         >
@@ -160,7 +162,7 @@ const HeroV2 = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );
